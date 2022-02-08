@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header_sec {
+    height:100vh; 
+    background-color: rgb(216, 178, 178);
+    background-position: center;
+    background-size: cover;
+    margin: 0 100px 0 100px; 
+}
+#card {
+    width: 100%;
+    height: 100vh;
+
+}
+#card img{
+    width: 100%;
+    height: 100vh;  
+    padding: 30px 100px 30px 100px ; 
+    
+}
+
+
+.heading{
+    
+    position: absolute;
+    margin: 150px;     
+}
+.heading h1{
+    color: rgb(155, 147, 147);
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    
+}
+.heading h1:hover{
+    border: none;
+    text-shadow: 1px 1px 1px rgb(81, 75, 87);
+    
+
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 20px 0px;
+
+}
+
+input{
+    padding: 12px;
+    margin: 5px;
+    border:none;
+    border-radius: 15px;
+}
+
+
+#msg{
+    padding: 10px;
+    margin: 5px;
+    border:none;
+    border: 15px;
+    border-radius: 15px;
+    
+   
+}
+
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 4px;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin: 15px;
+  font-family: "Roboto", sans-serif;
+  filter: hue-rotate(0deg);
+  border: 2px solid #d2bdff;
+  transition: all 0.1s linear;
+  text-align: center;
+}
+.button:hover {
+  border: 1px solid transparent;
+}
+.button:hover span {
+  position: absolute;
+  display: block;
+}
+.button:hover span:nth-child(1) {
+  filter: hue-rotate(0deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #3a86ff);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+.button:hover span:nth-child(2) {
+  filter: hue-rotate(60deg);
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #3a86ff);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+.button:hover span:nth-child(3) {
+  filter: hue-rotate(120deg);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, #3a86ff);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+    height: 3px;
+  }
+  50%, 100% {
+    height: 2px;
+    right: 100%;
+  }
+}
+.button:hover span:nth-child(4) {
+  filter: hue-rotate(300deg);
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #3a86ff);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
