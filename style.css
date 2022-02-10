@@ -162,3 +162,23 @@ input{
     bottom: 100%;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  /* mobile devise */
+.header_sec {
+  grid-template-columns: 3fr;
+}
+}
+@media only screen and (max-width: 786px) {
+  /* tablets devise */
+.header_sec {
+  grid-template-columns: 3fr;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+  /* laptop devise */
+.header_sec{
+  grid-template-columns: 3fr;
+}
+}
