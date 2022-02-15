@@ -9,6 +9,9 @@
     background-position: center;
     background-size: cover;
     margin: 0 100px 0 100px; 
+    display: flex;
+    align-items: center;
+
 }
 #card {
     width: 100%;
@@ -22,21 +25,20 @@
     
 }
 
-
 .heading{
     
     position: absolute;
     margin: 150px;     
 }
 .heading h1{
-    color: rgb(155, 147, 147);
+    color: rgb(75, 49, 49);
     font-size: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
 .heading h1:hover{
     border: none;
-    text-shadow: 1px 1px 1px rgb(81, 75, 87);
+    text-shadow: 1px 1px 1px rgb(91, 67, 116);
     
 
 }
@@ -53,6 +55,9 @@ input{
     margin: 5px;
     border:none;
     border-radius: 15px;
+    background: rgb(71, 15, 5);
+    color: rgb(245, 231, 231);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -62,6 +67,9 @@ input{
     border:none;
     border: 15px;
     border-radius: 15px;
+    background: rgb(71, 15, 5);
+    color: rgb(245, 231, 231);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
    
 }
@@ -72,7 +80,7 @@ input{
   display: inline-block;
   padding: 20px;
   border-radius: 4px;
-  color: #03e9f4;
+  color: #fcfafa;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
@@ -80,11 +88,16 @@ input{
   font-family: "Roboto", sans-serif;
   filter: hue-rotate(0deg);
   border: 2px solid #d2bdff;
+  border-radius: 10px;
   transition: all 0.1s linear;
   text-align: center;
+  background-color: rgb(94, 65, 65);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .button:hover {
   border: 1px solid transparent;
+  background-color: rgb(0, 0, 2);
+
 }
 .button:hover span {
   position: absolute;
@@ -99,6 +112,8 @@ input{
   background: linear-gradient(90deg, transparent, #3a86ff);
   animation: animate1 1s linear infinite;
 }
+
+
 @keyframes animate1 {
   0% {
     left: -100%;
@@ -161,24 +176,4 @@ input{
   50%, 100% {
     bottom: 100%;
   }
-}
-
-@media only screen and (max-width: 480px) {
-  /* mobile devise */
-.header_sec {
-  grid-template-columns: 1fr;
-}
-}
-@media only screen and (max-width: 786px) {
-  /* tablets devise */
-.header_sec {
-  grid-template-columns: 1fr;
-}
-}
-
-@media only screen and (max-width: 1024px) {
-  /* laptop devise */
-.header_sec{
-  grid-template-columns: 1fr;
-}
 }
